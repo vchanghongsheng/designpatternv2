@@ -10,7 +10,7 @@ public class StrategyTest {
         Context context = new Context(new OperationAdd());
         System.out.println(context.executeStrategy(1, 2));
 
-        context = new Context(new OperationSubstract());
+        context = new Context(new OperationSubtract());
         System.out.println(context.executeStrategy(1, 2));
     }
 
@@ -30,7 +30,7 @@ class OperationAdd implements Strategy {
 }
 
 
-class OperationSubstract implements Strategy {
+class OperationSubtract implements Strategy {
     @Override
     public int doOperation(int num1, int num2) {
         return num1 - num2;
